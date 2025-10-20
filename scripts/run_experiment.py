@@ -14,9 +14,11 @@ def load_yaml(path: Path):
 
 
 @app.command()
-def main(exp: str = typer.Option(..., help="Experiment id: e1..e5"),
-		  config: Path = typer.Option(Path("ai_pbpk/config/experiments") / "e2.yaml",
-		  help="Path to experiment YAML config")):
+def main(
+	# Support both original and alternative flag names
+	exp: str = typer.Option(None, help="Experiment id: e1..e5", param_declarations=["--exp", "--exp-id"]),
+	config: Path = typer.Option(Path("ai_pbpk/config/experiments") / "e2.yaml", help="Path to experiment YAML config", param_declarations=["--config", "--config-path"]),
+):
 	base_cfg = load_yaml(Path("ai_pbpk/config/base.yaml"))
 	exp_cfg = load_yaml(config)
 
