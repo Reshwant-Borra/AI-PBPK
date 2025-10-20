@@ -1,0 +1,5 @@
+raw_excel_path: data/raw/nn3c04037_si_002 (1).xlsx
+processed_long: data/processed/clean_long.parquet
+processed_features: data/processed/feature_table.parquet
+
+

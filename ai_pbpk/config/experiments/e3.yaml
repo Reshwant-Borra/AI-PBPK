@@ -1,0 +1,18 @@
+name: E3_virtual_cohort
+description: Virtual cohort N=50; report mean, 95% CI; MPC variance <= baseline
+cohort:
+  N: 50
+  param_variance_scale: 0.2
+mpc:
+  Np: 8
+  Nc: 4
+  Ts: 0.5
+  w1: 1.0
+  w2: 0.2
+  u_max: 1.0
+  dose_total: 10.0
+outputs:
+  figures: [G3]
+  tables: [cohort_stats]
+
+

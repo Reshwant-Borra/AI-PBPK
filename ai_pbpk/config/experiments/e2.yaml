@@ -1,0 +1,18 @@
+name: E2_canonical_mpc_vs_baselines
+description: MPC improves %ID and tumor:plasma AUC over baselines
+sim:
+  t_end: 48.0
+  dt: 0.1
+mpc:
+  Np: 12
+  Nc: 6
+  Ts: 0.25
+  w1: 1.0
+  w2: 0.1
+  u_max: 1.0
+  dose_total: 10.0
+outputs:
+  figures: [G1, G2]
+  tables: [summary_metrics]
+
+

@@ -1,0 +1,17 @@
+name: E4_pareto_sweep
+description: Sweep (w1, w2); generate Pareto frontier
+sweep:
+  w1: [0.5, 1.0, 2.0]
+  w2: [0.05, 0.1, 0.2, 0.5]
+mpc:
+  Np: 8
+  Nc: 4
+  Ts: 0.5
+  u_max: 1.0
+  dose_total: 10.0
+outputs:
+  figures: [G4]
+  tables: [pareto]
+run: e4
+
+

@@ -1,0 +1,15 @@
+name: E1_validate_pbpk
+description: Validate PBPK against literature-like cases
+cases:
+  - study_id: S1
+    nanoparticle_id: NP_A
+    organs: [tumor, liver, spleen]
+  - study_id: S2
+    nanoparticle_id: NP_B
+    organs: [tumor, liver, spleen]
+  - study_id: S3
+    nanoparticle_id: NP_C
+    organs: [tumor, liver, spleen]
+metrics: [rmse_overlay]
+
+

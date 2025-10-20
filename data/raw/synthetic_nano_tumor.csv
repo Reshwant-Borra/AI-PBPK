@@ -1,0 +1,12 @@
+participant_id,age_years,weight_kg,core_material,dose_mgkg,time_h,plasma_ngml,tumor_ngg
+P1,45,70,gold,2.0,0.0,0.0,0.0
+P1,45,70,gold,2.0,1.0,10.0,1.0
+P1,45,70,gold,2.0,2.0,8.0,1.5
+P2,55,80,liposome,2.0,0.0,0.0,0.0
+P2,55,80,liposome,2.0,1.0,9.0,1.2
+P2,55,80,liposome,2.0,2.0,7.0,1.4
+P3,50,75,silica,2.0,0.0,0.0,0.0
+P3,50,75,silica,2.0,1.0,11.0,1.1
+P3,50,75,silica,2.0,2.0,9.0,1.6
+
+

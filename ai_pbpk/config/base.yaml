@@ -1,0 +1,42 @@
+seed: 42
+logging:
+  level: INFO
+  mlflow_tracking_uri: ${MLFLOW_TRACKING_URI:-mlruns}
+paths:
+  data_raw: data/raw
+  data_processed: data/processed
+  models_dir: models
+  artifacts_dir: artifacts
+  reports_dir: reports
+  figures_dir: reports/figures
+ml:
+  model_type: xgboost
+  params:
+    n_estimators: 300
+    learning_rate: 0.05
+    max_depth: 5
+    subsample: 0.9
+    colsample_bytree: 0.9
+data:
+  target_column: k_params
+  stratify_by: core_material
+  test_size: 0.15
+  val_size: 0.15
+  stratify_tolerance: 0.02
+sim:
+  solver: radau
+  t_end: 48.0
+  dt: 0.1
+mpc:
+  Np: 12
+  Nc: 6
+  Ts: 0.25
+  w1: 1.0
+  w2: 0.1
+  u_max: 1.0
+  dose_total: 10.0
+report:
+  include_figures: [G1, G2, G3, G4]
+  pdf_name: summary.pdf
+
+
